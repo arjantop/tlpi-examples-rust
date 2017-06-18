@@ -1,0 +1,38 @@
+[package]
+name = "lpi-examples"
+version = "0.1.0"
+authors = ["Arjan Topolovec <arjan.top@gmail.com>"]
+
+[[bin]]
+name = 'copy'
+path = 'src/chapter4/copy.rs'
+
+[[bin]]
+name = 'seek_io'
+path = 'src/chapter4/seek_io.rs'
+
+[[bin]]
+name = 'bad_exclusive_open'
+path = 'src/chapter5/bad_exclusive_open.rs'
+
+[[bin]]
+name = 't_readv'
+path = 'src/chapter5/t_readv.rs'
+
+[[bin]]
+name = 't_truncate'
+path = 'src/chapter5/t_truncate.rs'
+
+[[bin]]
+name = 't_stat'
+path = 'src/chapter15/t_stat.rs'
+
+[[bin]]
+name = 'chapter5_exercise3'
+path = 'src/exercises/chapter5/exercise3.rs'
+
+[dependencies]
+nix = '*'
+clap = '*'
+libc = '*'
+chrono = '*'
